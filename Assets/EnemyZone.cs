@@ -4,13 +4,14 @@ using UnityEngine;
 public class EnemyZone : MonoBehaviour
 {
     [Header("SphereCast Setting")]
-     public float radius = 1.0f;
-     public  float maxDistance = 10.0f;
-     public LayerMask playerMask;
-     [Header("Enemy Setting")]
-     public float speedEnemy = 4f;
-     public bool isAttack = false;
-     public bool isHit ;
+    public float radius = 1.0f;
+    public  float maxDistance = 10.0f;
+    public LayerMask playerMask;
+    [Header("Enemy Setting")]
+    public float speedEnemy = 4f;
+    public bool isAttack = false;
+    public bool isRun ;
+    public float distance;
      
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -22,24 +23,31 @@ public class EnemyZone : MonoBehaviour
     void Update()
     {
         RaycastHit hit;
-       isHit = Physics.SphereCast(transform.position, radius, transform.forward, out hit, maxDistance, playerMask);
+        
+
+       if( Physics.SphereCast(transform.position, radius, transform.forward, out hit, maxDistance, playerMask)){
+            Vector3 target = hit.transform.position;
+            distance = Vector3.Distance(transform.position, target);
+            transform.LookAt(target);
+            transform.position = Vector3.MoveTowards(transform.position, target, speedEnemy * Time.deltaTime);
+            isRun = true;
+            if (distance <= 1.6f)
+            {
+                isAttack = true;
+                isRun = false;
+            }
+            else 
+            {
+                isAttack = false;
+                isRun = true;
+            }
+        }
+       else
+       {
+           isRun = false;
+            isAttack = false;
+       }
        
-      if (isHit)
-      {
-          Vector3 target = hit.transform.position;
-          float distance = Vector3.Distance(transform.position, target);
-          transform.LookAt(target);
-          transform.position = Vector3.MoveTowards(transform.position, target, speedEnemy * Time.deltaTime);
-          if (distance <= 1.5f)
-          {
-              isAttack = true;
-          }
-          else 
-          {
-              isAttack = false;
-          }
-      }
-     
     }
 
     private void OnDrawGizmosSelected()
@@ -49,4 +57,4 @@ public class EnemyZone : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position + transform.forward* maxDistance , radius);
         Gizmos.DrawLine(transform.position, transform.position + transform.forward* maxDistance);
     }
-}
+} 

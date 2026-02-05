@@ -2,7 +2,7 @@ Using pre-set license
 Built from '6000.0/respin/6000.0.59f1-063c55f2fd0f' branch; Version is '6000.0.59f2 (ef281c76c3c1) revision 15673372'; Using compiler version '193933523'; Build Type 'Release'
 OS: 'Windows 11  (10.0.26200) 64bit Professional' Language: 'en' Physical Memory: 32581 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
-Date: 2026-02-04T08:13:26Z
+Date: 2026-02-05T03:07:03Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.0.59f2\Editor\Unity.exe
@@ -16,7 +16,7 @@ C:/UNITY PROJECT/UNITY GIT/project1
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-51417
+54810
 -job-worker-count
 5
 -background-job-worker-count
@@ -62,12 +62,12 @@ C:/UNITY PROJECT/UNITY GIT/project1
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [27704]  Target information:
+Player connection [8588]  Target information:
 
-Player connection [27704]  * "[IP] 192.168.1.23 [Port] 0 [Flags] 2 [Guid] 3552575866 [EditorId] 3552575866 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-EOHG2S2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [8588]  * "[IP] 192.168.1.23 [Port] 0 [Flags] 2 [Guid] 681630102 [EditorId] 681630102 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-EOHG2S2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [27704] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [27704] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [8588] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [8588] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 5
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -79,7 +79,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 5.27 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.22 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.59f2 (ef281c76c3c1)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.59f2/Editor/Data/Resources/UnitySubsystems
@@ -95,40 +95,24 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.59f2/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.59f2/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.59f2/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56844
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56908
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.59f2/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.59f2/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.59f2/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
-Registered in 0.002952 seconds.
-- Loaded All Assemblies, in  0.304 seconds
+Registered in 0.003144 seconds.
+- Loaded All Assemblies, in  0.326 seconds
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 Native extension for iOS target not found
 Native extension for Android target not found
-Multiple ADB server instances found, the following ADB server instance have been terminated due to being run from another SDK. Process paths: 
-C:\Program Files\Unity\Hub\Editor\6000.0.58f2\Editor\Data\PlaybackEngines\AndroidPlayer\SDK\platform-tools\adb.exe
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-UnityEditor.Android.AndroidDeploymentTargetsExtension:GetKnownTargets (UnityEditor.DeploymentTargets.IDeploymentTargetsMainThreadContext,UnityEditor.ProgressHandler) (at /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/DeploymentTargets/AndroidDeploymentTargetsExtension.cs:348)
-UnityEditor.Android.TargetScanWorker:ScanSync () (at /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/TargetScanWorker.cs:164)
-UnityEditor.Android.TargetExtension:OnUsbDevicesChanged (UnityEditor.Hardware.UsbDevice[]) (at /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/ExtensionModule.cs:106)
-UnityEditor.Android.TargetExtension:OnLoad () (at /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/ExtensionModule.cs:67)
-UnityEditor.Modules.ModuleManager:InitializePlatformSupportModules ()
-
-(Filename: /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/DeploymentTargets/AndroidDeploymentTargetsExtension.cs Line: 348)
-
-Android Extension - Scanning For ADB Devices 2282 ms
+Android Extension - Scanning For ADB Devices 174 ms
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.564 seconds
-Domain Reload Profiling: 2867ms
-	BeginReloadAssembly (107ms)
+- Finished resetting the current domain, in  0.460 seconds
+Domain Reload Profiling: 784ms
+	BeginReloadAssembly (101ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
@@ -136,25 +120,25 @@ Domain Reload Profiling: 2867ms
 		CreateAndSetChildDomain (1ms)
 	RebuildCommonClasses (30ms)
 	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (37ms)
-	LoadAllAssembliesAndSetupDomain (118ms)
-		LoadAssemblies (106ms)
+	initialDomainReloadingComplete (47ms)
+	LoadAllAssembliesAndSetupDomain (137ms)
+		LoadAssemblies (100ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (116ms)
-			TypeCache.Refresh (115ms)
-				TypeCache.ScanAssembly (105ms)
+		AnalyzeDomain (133ms)
+			TypeCache.Refresh (131ms)
+				TypeCache.ScanAssembly (121ms)
 			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (2565ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (460ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (2530ms)
+		SetupLoadedEditorAssemblies (423ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2357ms)
+			InitializePlatformSupportModulesInManaged (248ms)
 			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (41ms)
-			ProcessInitializeOnLoadAttributes (85ms)
-			ProcessInitializeOnLoadMethodAttributes (44ms)
+			BeforeProcessingInitializeOnLoad (42ms)
+			ProcessInitializeOnLoadAttributes (89ms)
+			ProcessInitializeOnLoadMethodAttributes (41ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -163,8 +147,8 @@ Domain Reload Profiling: 2867ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.558 seconds
-Refreshing native plugins compatible for Editor in 0.63 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.561 seconds
+Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
@@ -173,1036 +157,981 @@ Package Manager log level set to [2]
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.594 seconds
-Domain Reload Profiling: 1150ms
-	BeginReloadAssembly (132ms)
+- Finished resetting the current domain, in  0.562 seconds
+Domain Reload Profiling: 1121ms
+	BeginReloadAssembly (129ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (21ms)
-	RebuildCommonClasses (27ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (29ms)
-	LoadAllAssembliesAndSetupDomain (358ms)
-		LoadAssemblies (242ms)
+		CreateAndSetChildDomain (22ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (30ms)
+	LoadAllAssembliesAndSetupDomain (362ms)
+		LoadAssemblies (245ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (191ms)
-			TypeCache.Refresh (142ms)
-				TypeCache.ScanAssembly (130ms)
-			BuildScriptInfoCaches (37ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (594ms)
+		AnalyzeDomain (187ms)
+			TypeCache.Refresh (139ms)
+				TypeCache.ScanAssembly (127ms)
+			BuildScriptInfoCaches (36ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (562ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (420ms)
+		SetupLoadedEditorAssemblies (413ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (12ms)
 			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (83ms)
-			ProcessInitializeOnLoadAttributes (281ms)
-			ProcessInitializeOnLoadMethodAttributes (37ms)
+			BeforeProcessingInitializeOnLoad (87ms)
+			ProcessInitializeOnLoadAttributes (272ms)
+			ProcessInitializeOnLoadMethodAttributes (36ms)
 			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (5ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 0.75 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 1.10 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 27 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6144 unused Assets / (6.5 MB). Loaded Objects now: 6808.
-Memory consumption went from 133.2 MB to 126.7 MB.
-Total: 6.538100 ms (FindLiveObjects: 0.483100 ms CreateObjectMapping: 0.552000 ms MarkObjects: 3.171400 ms  DeleteObjects: 2.331300 ms)
+Unloading 6146 unused Assets / (6.1 MB). Loaded Objects now: 6810.
+Memory consumption went from 133.2 MB to 127.1 MB.
+Total: 8.732800 ms (FindLiveObjects: 0.488600 ms CreateObjectMapping: 0.879400 ms MarkObjects: 4.865800 ms  DeleteObjects: 2.498000 ms)
 
 ========================================================================
-Received Import Request.
-  Time since last request: 23728.806366 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/SRP
-  artifactKey: Guid(457266d38f6a7694fa69508edab6459b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/SRP using Guid(457266d38f6a7694fa69508edab6459b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5d7ba6793884e3097be3bbaaee78650e') in 0.004907 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.720 seconds
+Refreshing native plugins compatible for Editor in 1.04 ms, found 3 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.743 seconds
+Domain Reload Profiling: 1465ms
+	BeginReloadAssembly (230ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (51ms)
+	RebuildCommonClasses (47ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (404ms)
+		LoadAssemblies (338ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (173ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (150ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (744ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (558ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (16ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (115ms)
+			ProcessInitializeOnLoadAttributes (369ms)
+			ProcessInitializeOnLoadMethodAttributes (49ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (18ms)
+Refreshing native plugins compatible for Editor in 1.39 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6141 unused Assets / (6.4 MB). Loaded Objects now: 6827.
+Memory consumption went from 143.3 MB to 136.9 MB.
+Total: 9.273100 ms (FindLiveObjects: 0.527300 ms CreateObjectMapping: 0.646700 ms MarkObjects: 4.926400 ms  DeleteObjects: 3.171100 ms)
 
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.607 seconds
+Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.561 seconds
+Domain Reload Profiling: 1167ms
+	BeginReloadAssembly (190ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (38ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (24ms)
+	LoadAllAssembliesAndSetupDomain (352ms)
+		LoadAssemblies (299ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (149ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (130ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (562ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (442ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (14ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (92ms)
+			ProcessInitializeOnLoadAttributes (283ms)
+			ProcessInitializeOnLoadMethodAttributes (45ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
+Refreshing native plugins compatible for Editor in 1.06 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6141 unused Assets / (6.3 MB). Loaded Objects now: 6830.
+Memory consumption went from 143.3 MB to 136.9 MB.
+Total: 9.742700 ms (FindLiveObjects: 0.555100 ms CreateObjectMapping: 0.727800 ms MarkObjects: 4.970800 ms  DeleteObjects: 3.487700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.603 seconds
+Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.562 seconds
+Domain Reload Profiling: 1167ms
+	BeginReloadAssembly (187ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (43ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (21ms)
+	LoadAllAssembliesAndSetupDomain (354ms)
+		LoadAssemblies (274ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (163ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (144ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (562ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (430ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (13ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (96ms)
+			ProcessInitializeOnLoadAttributes (277ms)
+			ProcessInitializeOnLoadMethodAttributes (37ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 1.04 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6141 unused Assets / (6.2 MB). Loaded Objects now: 6833.
+Memory consumption went from 143.3 MB to 137.1 MB.
+Total: 9.915000 ms (FindLiveObjects: 0.544500 ms CreateObjectMapping: 0.618500 ms MarkObjects: 5.611500 ms  DeleteObjects: 3.139200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.587 seconds
+Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.573 seconds
+Domain Reload Profiling: 1160ms
+	BeginReloadAssembly (177ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (42ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (21ms)
+	LoadAllAssembliesAndSetupDomain (350ms)
+		LoadAssemblies (263ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (164ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (142ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (573ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (448ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (93ms)
+			ProcessInitializeOnLoadAttributes (295ms)
+			ProcessInitializeOnLoadMethodAttributes (38ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
+Refreshing native plugins compatible for Editor in 1.29 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6141 unused Assets / (7.2 MB). Loaded Objects now: 6836.
+Memory consumption went from 143.3 MB to 136.2 MB.
+Total: 10.744300 ms (FindLiveObjects: 0.545700 ms CreateObjectMapping: 0.655600 ms MarkObjects: 5.218100 ms  DeleteObjects: 4.323300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.584 seconds
+Refreshing native plugins compatible for Editor in 0.65 ms, found 3 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.581 seconds
+Domain Reload Profiling: 1165ms
+	BeginReloadAssembly (177ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (36ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (22ms)
+	LoadAllAssembliesAndSetupDomain (338ms)
+		LoadAssemblies (267ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (149ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (129ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (581ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (451ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (13ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (89ms)
+			ProcessInitializeOnLoadAttributes (302ms)
+			ProcessInitializeOnLoadMethodAttributes (41ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
+Refreshing native plugins compatible for Editor in 1.21 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6141 unused Assets / (6.7 MB). Loaded Objects now: 6839.
+Memory consumption went from 143.4 MB to 136.6 MB.
+Total: 9.552400 ms (FindLiveObjects: 0.588100 ms CreateObjectMapping: 0.629700 ms MarkObjects: 4.685900 ms  DeleteObjects: 3.647500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Import Request.
-  Time since last request: 2.092624 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Arch
-  artifactKey: Guid(3bc4be437fb63c9489e0018b4aed70d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Arch using Guid(3bc4be437fb63c9489e0018b4aed70d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6f040b5a9ac576af0502b821d17451af') in 0.0005479 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 4678.065586 seconds.
+  path: Assets/SazenGames/Skeleton/Art/Meshes/Skeleton_Model_110.fbx
+  artifactKey: Guid(be3776e9bd6e31341b3490a035f6ea50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SazenGames/Skeleton/Art/Meshes/Skeleton_Model_110.fbx using Guid(be3776e9bd6e31341b3490a035f6ea50) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5d81504e75cceaaa7cc0004c483dc1a8') in 0.5463765 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 175
 
 ========================================================================
-Received Import Request.
-  Time since last request: 1.059196 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Arch/Fence
-  artifactKey: Guid(496b9c2c5c59e054599628295020de49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Arch/Fence using Guid(496b9c2c5c59e054599628295020de49) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b34b76453a606df195ead4d28b1801ee') in 0.0005706 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.599 seconds
+Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.575 seconds
+Domain Reload Profiling: 1176ms
+	BeginReloadAssembly (187ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (15ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (47ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (22ms)
+	LoadAllAssembliesAndSetupDomain (348ms)
+		LoadAssemblies (267ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (158ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (139ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (576ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (440ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (92ms)
+			ProcessInitializeOnLoadAttributes (280ms)
+			ProcessInitializeOnLoadMethodAttributes (46ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (17ms)
+Refreshing native plugins compatible for Editor in 1.12 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6142 unused Assets / (6.4 MB). Loaded Objects now: 6879.
+Memory consumption went from 159.0 MB to 152.6 MB.
+Total: 9.916100 ms (FindLiveObjects: 0.582300 ms CreateObjectMapping: 0.626600 ms MarkObjects: 5.510500 ms  DeleteObjects: 3.195600 ms)
 
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.588 seconds
+Refreshing native plugins compatible for Editor in 1.09 ms, found 3 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.585 seconds
+Domain Reload Profiling: 1174ms
+	BeginReloadAssembly (181ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (34ms)
+	RebuildCommonClasses (30ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (26ms)
+	LoadAllAssembliesAndSetupDomain (341ms)
+		LoadAssemblies (284ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (149ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (131ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (585ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (454ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (14ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (99ms)
+			ProcessInitializeOnLoadAttributes (287ms)
+			ProcessInitializeOnLoadMethodAttributes (46ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 1.23 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6141 unused Assets / (5.4 MB). Loaded Objects now: 6882.
+Memory consumption went from 158.9 MB to 153.5 MB.
+Total: 9.952700 ms (FindLiveObjects: 0.543100 ms CreateObjectMapping: 0.631800 ms MarkObjects: 5.525400 ms  DeleteObjects: 3.251200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.620 seconds
+Refreshing native plugins compatible for Editor in 0.70 ms, found 3 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.581 seconds
+Domain Reload Profiling: 1203ms
+	BeginReloadAssembly (192ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (46ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (23ms)
+	LoadAllAssembliesAndSetupDomain (354ms)
+		LoadAssemblies (283ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (156ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (139ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (581ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (454ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (91ms)
+			ProcessInitializeOnLoadAttributes (290ms)
+			ProcessInitializeOnLoadMethodAttributes (50ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 1.01 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6141 unused Assets / (7.0 MB). Loaded Objects now: 6885.
+Memory consumption went from 158.9 MB to 152.0 MB.
+Total: 10.818700 ms (FindLiveObjects: 0.635900 ms CreateObjectMapping: 0.686000 ms MarkObjects: 5.245300 ms  DeleteObjects: 4.250000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.611 seconds
+Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.581 seconds
+Domain Reload Profiling: 1193ms
+	BeginReloadAssembly (200ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (35ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (23ms)
+	LoadAllAssembliesAndSetupDomain (344ms)
+		LoadAssemblies (292ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (158ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (133ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (582ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (457ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (14ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (95ms)
+			ProcessInitializeOnLoadAttributes (300ms)
+			ProcessInitializeOnLoadMethodAttributes (41ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
+Refreshing native plugins compatible for Editor in 1.30 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6141 unused Assets / (6.4 MB). Loaded Objects now: 6888.
+Memory consumption went from 159.0 MB to 152.6 MB.
+Total: 9.725700 ms (FindLiveObjects: 0.642800 ms CreateObjectMapping: 0.661600 ms MarkObjects: 5.059300 ms  DeleteObjects: 3.360900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.12 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6134 unused Assets / (6.3 MB). Loaded Objects now: 6888.
+Memory consumption went from 159.1 MB to 152.9 MB.
+Total: 9.200500 ms (FindLiveObjects: 0.533000 ms CreateObjectMapping: 0.624100 ms MarkObjects: 4.693100 ms  DeleteObjects: 3.348900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.604 seconds
+Refreshing native plugins compatible for Editor in 0.99 ms, found 3 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.561 seconds
+Domain Reload Profiling: 1167ms
+	BeginReloadAssembly (184ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (43ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (28ms)
+	LoadAllAssembliesAndSetupDomain (353ms)
+		LoadAssemblies (279ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (156ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (134ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (561ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (434ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (12ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (99ms)
+			ProcessInitializeOnLoadAttributes (274ms)
+			ProcessInitializeOnLoadMethodAttributes (40ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 1.18 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6141 unused Assets / (6.6 MB). Loaded Objects now: 6891.
+Memory consumption went from 159.0 MB to 152.4 MB.
+Total: 9.688700 ms (FindLiveObjects: 0.627900 ms CreateObjectMapping: 0.753900 ms MarkObjects: 4.800700 ms  DeleteObjects: 3.504800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.585 seconds
+Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.584 seconds
+Domain Reload Profiling: 1170ms
+	BeginReloadAssembly (177ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (37ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (21ms)
+	LoadAllAssembliesAndSetupDomain (345ms)
+		LoadAssemblies (279ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (152ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (134ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (584ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (457ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (12ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (94ms)
+			ProcessInitializeOnLoadAttributes (298ms)
+			ProcessInitializeOnLoadMethodAttributes (44ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 1.23 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6141 unused Assets / (7.1 MB). Loaded Objects now: 6894.
+Memory consumption went from 159.0 MB to 152.0 MB.
+Total: 11.617400 ms (FindLiveObjects: 0.549200 ms CreateObjectMapping: 0.656500 ms MarkObjects: 6.059400 ms  DeleteObjects: 4.351000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.689 seconds
+Refreshing native plugins compatible for Editor in 0.97 ms, found 3 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.580 seconds
+Domain Reload Profiling: 1271ms
+	BeginReloadAssembly (225ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (69ms)
+	RebuildCommonClasses (36ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (25ms)
+	LoadAllAssembliesAndSetupDomain (394ms)
+		LoadAssemblies (302ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (180ms)
+			TypeCache.Refresh (11ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (156ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (581ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (443ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (14ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (105ms)
+			ProcessInitializeOnLoadAttributes (277ms)
+			ProcessInitializeOnLoadMethodAttributes (39ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 1.11 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6142 unused Assets / (6.5 MB). Loaded Objects now: 6898.
+Memory consumption went from 159.1 MB to 152.6 MB.
+Total: 10.480600 ms (FindLiveObjects: 0.559000 ms CreateObjectMapping: 0.728300 ms MarkObjects: 5.585500 ms  DeleteObjects: 3.606100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.617 seconds
+Refreshing native plugins compatible for Editor in 0.65 ms, found 3 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.568 seconds
+Domain Reload Profiling: 1186ms
+	BeginReloadAssembly (195ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (40ms)
+	RebuildCommonClasses (36ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (26ms)
+	LoadAllAssembliesAndSetupDomain (350ms)
+		LoadAssemblies (282ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (158ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (134ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (569ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (436ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (92ms)
+			ProcessInitializeOnLoadAttributes (280ms)
+			ProcessInitializeOnLoadMethodAttributes (42ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (11ms)
+Refreshing native plugins compatible for Editor in 1.14 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6141 unused Assets / (6.5 MB). Loaded Objects now: 6900.
+Memory consumption went from 159.1 MB to 152.7 MB.
+Total: 9.596000 ms (FindLiveObjects: 0.542400 ms CreateObjectMapping: 0.649000 ms MarkObjects: 5.061100 ms  DeleteObjects: 3.342000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.02 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6134 unused Assets / (6.7 MB). Loaded Objects now: 6900.
+Memory consumption went from 159.3 MB to 152.5 MB.
+Total: 9.912200 ms (FindLiveObjects: 0.563900 ms CreateObjectMapping: 0.675700 ms MarkObjects: 5.172100 ms  DeleteObjects: 3.498700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.51 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6134 unused Assets / (6.5 MB). Loaded Objects now: 6900.
+Memory consumption went from 159.3 MB to 152.8 MB.
+Total: 10.739500 ms (FindLiveObjects: 0.745200 ms CreateObjectMapping: 0.836800 ms MarkObjects: 5.984900 ms  DeleteObjects: 3.171400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.15 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6134 unused Assets / (6.6 MB). Loaded Objects now: 6900.
+Memory consumption went from 159.3 MB to 152.7 MB.
+Total: 10.710000 ms (FindLiveObjects: 0.602900 ms CreateObjectMapping: 0.703700 ms MarkObjects: 5.825100 ms  DeleteObjects: 3.576800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.15 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6134 unused Assets / (3.1 MB). Loaded Objects now: 6900.
+Memory consumption went from 159.3 MB to 156.2 MB.
+Total: 28.216200 ms (FindLiveObjects: 0.706700 ms CreateObjectMapping: 0.792100 ms MarkObjects: 23.781600 ms  DeleteObjects: 2.934400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.637 seconds
+Refreshing native plugins compatible for Editor in 0.67 ms, found 3 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.567 seconds
+Domain Reload Profiling: 1205ms
+	BeginReloadAssembly (200ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (47ms)
+	RebuildCommonClasses (36ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (365ms)
+		LoadAssemblies (282ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (169ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (148ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (567ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (441ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (12ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (101ms)
+			ProcessInitializeOnLoadAttributes (280ms)
+			ProcessInitializeOnLoadMethodAttributes (41ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 1.44 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6141 unused Assets / (6.5 MB). Loaded Objects now: 6903.
+Memory consumption went from 159.1 MB to 152.7 MB.
+Total: 9.571800 ms (FindLiveObjects: 0.595800 ms CreateObjectMapping: 0.683900 ms MarkObjects: 4.919600 ms  DeleteObjects: 3.371100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.572 seconds
+Refreshing native plugins compatible for Editor in 0.72 ms, found 3 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.559 seconds
+Domain Reload Profiling: 1131ms
+	BeginReloadAssembly (168ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (33ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (21ms)
+	LoadAllAssembliesAndSetupDomain (338ms)
+		LoadAssemblies (267ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (149ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (130ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (559ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (432ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (14ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (96ms)
+			ProcessInitializeOnLoadAttributes (276ms)
+			ProcessInitializeOnLoadMethodAttributes (39ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
+Refreshing native plugins compatible for Editor in 1.58 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6141 unused Assets / (6.2 MB). Loaded Objects now: 6906.
+Memory consumption went from 159.2 MB to 152.9 MB.
+Total: 9.658400 ms (FindLiveObjects: 0.563700 ms CreateObjectMapping: 0.643100 ms MarkObjects: 4.926500 ms  DeleteObjects: 3.523600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.772682 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Arch/Fence/SimWoodFnc
-  artifactKey: Guid(f5b68b38eba7f7440a1393e957e7cd2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Arch/Fence/SimWoodFnc using Guid(f5b68b38eba7f7440a1393e957e7cd2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a003f53ebb16560ff4f46e7934bc0daf') in 0.0005108 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.767769 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Arch/Fence/SimWoodFnc/SWFModules
-  artifactKey: Guid(c73fa24aaceb75e43bcdfa02ff554d38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Arch/Fence/SimWoodFnc/SWFModules using Guid(c73fa24aaceb75e43bcdfa02ff554d38) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8d1d24223df3418b87c8aa2252486052') in 0.0006061 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.660336 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Arch/Fence/SimWoodFnc/SWFModules/SWFModA.fbx
-  artifactKey: Guid(fe47cdb1cf11424468edf69fc159a74d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Arch/Fence/SimWoodFnc/SWFModules/SWFModA.fbx using Guid(fe47cdb1cf11424468edf69fc159a74d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '645913cfa43d6e0c4254e696f5ab13d9') in 0.438997 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.355758 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Arch/Ruins
-  artifactKey: Guid(0bf6a6333828ba44a9f6e12141023d47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Arch/Ruins using Guid(0bf6a6333828ba44a9f6e12141023d47) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c97c7cf5474fde94ceacee29661d1675') in 0.0005505 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.042280 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Arch/Ruins/RuinedWalls
-  artifactKey: Guid(d9886af058a7a2042be48cbe3e2b1331) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Arch/Ruins/RuinedWalls using Guid(d9886af058a7a2042be48cbe3e2b1331) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b0c40b9215b4ee4eedaf7ed0b9d6181b') in 0.0005135 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.786213 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Props
-  artifactKey: Guid(fe640d67d3917824485fdda63a286657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Props using Guid(fe640d67d3917824485fdda63a286657) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8539286aa73d22253208b2c1f003fdf1') in 0.0005294 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.516851 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env
-  artifactKey: Guid(c6645faf191084c40b18932f7ff8e818) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env using Guid(c6645faf191084c40b18932f7ff8e818) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cec3ad0d075e81fcc6d7e8fb664d765c') in 0.0004937 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.648291 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Grass
-  artifactKey: Guid(c14f76f8eb3c47f4ca3b142da74958a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Grass using Guid(c14f76f8eb3c47f4ca3b142da74958a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a79ee4945c6213a9e2a895e82676135f') in 0.0005566 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.852370 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Grass/GrassLumps
-  artifactKey: Guid(15e1d60d3a0fe75478ecf36a7368a454) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Grass/GrassLumps using Guid(15e1d60d3a0fe75478ecf36a7368a454) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3508cdc7b27698bbe044201456d9d725') in 0.000499 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.341237 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Grass/GrassLumps/GrassLumpD.fbx
-  artifactKey: Guid(f94a905e68f55974495d9e831bbc1a9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Grass/GrassLumps/GrassLumpD.fbx using Guid(f94a905e68f55974495d9e831bbc1a9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f0cf8f0f36a43094c65b32d1fae8ee67') in 0.0661323 seconds
+  Time since last request: 5645.357097 seconds.
+  path: Assets/SazenGames/Skeleton/Art/Demo Animator Controllers/death.overrideController
+  artifactKey: Guid(d86f425e09bd3ff4fa0e23cbd09347a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SazenGames/Skeleton/Art/Demo Animator Controllers/death.overrideController using Guid(d86f425e09bd3ff4fa0e23cbd09347a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '80c1987a599dec4cdc89e6d3a119ab4d') in 0.2840382 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.116806 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Grass/GrassLumps/MixedGrassLumpLargeB.fbx
-  artifactKey: Guid(b264b53f5a90ad74d814854b0e986795) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Grass/GrassLumps/MixedGrassLumpLargeB.fbx using Guid(b264b53f5a90ad74d814854b0e986795) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '01429e21b5dffec8bac6bb109bdaa199') in 0.0448303 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.073424 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env
-  artifactKey: Guid(929bffeca4af19646be9779d001a4301) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env using Guid(929bffeca4af19646be9779d001a4301) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '570e412c6b6787fcf0aa90f5b6ea9e8e') in 0.0006552 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.996993 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Bushes
-  artifactKey: Guid(29a9a9c13bedb7442869755f9c8e9bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Bushes using Guid(29a9a9c13bedb7442869755f9c8e9bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c12d4c5334f5eff26a1c0d7330e50a7e') in 0.0005168 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.330897 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Props/Campfire
-  artifactKey: Guid(f4e7bb776bac4ee46812d5c43854ff71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Props/Campfire using Guid(f4e7bb776bac4ee46812d5c43854ff71) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fb714845db8743ad38631bf5ffe04da8') in 0.0008267 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.784675 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Props/Planks
-  artifactKey: Guid(d52872da4d9f95f4aa6b646c0ad3a50c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Props/Planks using Guid(d52872da4d9f95f4aa6b646c0ad3a50c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0a63cd845ad77276b57fc9679f53ce1b') in 0.0005408 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 6506.045464 seconds.
-  path: Assets/InputSystem_Actions.inputactions
-  artifactKey: Guid(052faaac586de48259a63d0c4782560b) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/InputSystem_Actions.inputactions using Guid(052faaac586de48259a63d0c4782560b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '355bb2588fc49d16bb5e113b06decd42') in 0.770562 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 22
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000211 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Readme.md
-  artifactKey: Guid(2ec12ccef839b87479ebd54418c2e9ca) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Readme.md using Guid(2ec12ccef839b87479ebd54418c2e9ca) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '13b02583db3813fb982d45d9f45b6be7') in 0.0068366 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/SazenGames/Skeleton/Scripts/AnimationReplayer.cs
-  artifactKey: Guid(e66b8749005de5c4998c15fa56703ac3) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/SazenGames/Skeleton/Scripts/AnimationReplayer.cs using Guid(e66b8749005de5c4998c15fa56703ac3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '2e5595ccc9c780694c575bd27445374f') in 0.0158376 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/SazenGames/Skeleton/Art/Animations/RootMotion/Skeleton_walk_forward_RM.fbx
-  artifactKey: Guid(cd5240ed4bf54a14ebfb4040a359fa63) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/SazenGames/Skeleton/Art/Animations/RootMotion/Skeleton_walk_forward_RM.fbx using Guid(cd5240ed4bf54a14ebfb4040a359fa63) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b3a03b0ee36c1c17ec2fbd247c3fd289') in 0.088022 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 174
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/SazenGames/Skeleton/Prefabs/Falchion_01.prefab
-  artifactKey: Guid(13251fa65556cef4baa8a6aa88b9203f) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/SazenGames/Skeleton/Prefabs/Falchion_01.prefab using Guid(13251fa65556cef4baa8a6aa88b9203f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '3f7df6a49d5fedfb3d57613c0c567791') in 0.0254638 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
-
-========================================================================
-Received Import Request.
   Time since last request: 0.000030 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Plants/PlantSaplingG.prefab
-  artifactKey: Guid(27c9d9ad6c2fa2e45bdd6520dd9fdfb9) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Plants/PlantSaplingG.prefab using Guid(27c9d9ad6c2fa2e45bdd6520dd9fdfb9) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '21b28be569b0b34e85b2b1fe932aad31') in 0.0070552 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000056 seconds.
-  path: Assets/SazenGames/Skeleton/Art/Animations/Skeleton_turn_left_90.fbx
-  artifactKey: Guid(0f81c45f8fa2f8e4a8d7b918f0329b89) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/SazenGames/Skeleton/Art/Animations/Skeleton_turn_left_90.fbx using Guid(0f81c45f8fa2f8e4a8d7b918f0329b89) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '2d9f4ae58539e55e18c272dd69d5a67d') in 0.0239316 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 174
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Ground/BackgroundMountains/BackgroundMountainA.fbx
-  artifactKey: Guid(42f568525ec1fb44b8d7bd741b5fafe2) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Ground/BackgroundMountains/BackgroundMountainA.fbx using Guid(42f568525ec1fb44b8d7bd741b5fafe2) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '9b2b6b1abee8c03228508d55804b1d76') in 0.0126921 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/TutorialInfo/Scripts/Readme.cs
-  artifactKey: Guid(fcf7219bab7fe46a1ad266029b2fee19) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/TutorialInfo/Scripts/Readme.cs using Guid(fcf7219bab7fe46a1ad266029b2fee19) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '98ec094bc08e000f4d53a8d0f23838e5') in 0.0045848 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/SazenGames/Skeleton/Art/Materials/Skeleton_Mat.mat
-  artifactKey: Guid(c25aacc7ee71ac54c8f3332e3578f45c) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/SazenGames/Skeleton/Art/Materials/Skeleton_Mat.mat using Guid(c25aacc7ee71ac54c8f3332e3578f45c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '7d3281506415459b4f9f593323e66090') in 0.0113244 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Rocks/RockNormD.fbx
-  artifactKey: Guid(2689ea4dcfeb8da439bad16666daa3ce) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Rocks/RockNormD.fbx using Guid(2689ea4dcfeb8da439bad16666daa3ce) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a265253bee16ae9c534de502d9dd883b') in 0.0098465 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/SazenGames/Skeleton/Art/Animations/Skeleton_idle.fbx
-  artifactKey: Guid(c255bd0cf5e73c24ba168d2ad159f033) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/SazenGames/Skeleton/Art/Animations/Skeleton_idle.fbx using Guid(c255bd0cf5e73c24ba168d2ad159f033) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '2396e105b6adaf158736348aef37bf43') in 0.0200766 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 174
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Bushes/Bush8.fbx
-  artifactKey: Guid(766e85f6b3c0aa94d828ad10c9bbdc12) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Bushes/Bush8.fbx using Guid(766e85f6b3c0aa94d828ad10c9bbdc12) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '40235cef205c831b22dca554c8427f2f') in 0.0148337 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/SazenGames/Skeleton/Art/Animations/Skeleton_death.fbx
-  artifactKey: Guid(56fcc68ba18948946afb47d690ad1095) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/SazenGames/Skeleton/Art/Animations/Skeleton_death.fbx using Guid(56fcc68ba18948946afb47d690ad1095) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '51c7c1268781ee9f8d99e33d5077a305') in 0.0202794 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 174
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Mushrooms/Girolle/GirolleAVariantA.fbx
-  artifactKey: Guid(42bc5f970a0316c4c94102c4f153df33) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Mushrooms/Girolle/GirolleAVariantA.fbx using Guid(42bc5f970a0316c4c94102c4f153df33) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'd57311c0b01bb98c7eb8cfbd818754d6') in 0.0126955 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Mushrooms/DeathCap/DeathCapBAdultVariantC.fbx
-  artifactKey: Guid(c4ab5595597d9484cb6aed01a5847656) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Mushrooms/DeathCap/DeathCapBAdultVariantC.fbx using Guid(c4ab5595597d9484cb6aed01a5847656) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '89f7aa5196558cb89f53fd3cce1138ed') in 0.0153667 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Plants/Dandelions/DandelionBLeaves.fbx
-  artifactKey: Guid(48a27d581801efe49935a2dfdc2ffb5a) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Plants/Dandelions/DandelionBLeaves.fbx using Guid(48a27d581801efe49935a2dfdc2ffb5a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'd55dd0ce4f31fd19fd071d7df5b2af09') in 0.0100427 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Rocks/RockSmallA.prefab
-  artifactKey: Guid(092a4707f8b589a439a015aeb164de54) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Rocks/RockSmallA.prefab using Guid(092a4707f8b589a439a015aeb164de54) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '8b9e304e74cd6099fd06493b2fbe80e6') in 0.00669 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/SazenGames/Skeleton/Art/Demo Animator Controllers/stab.overrideController
-  artifactKey: Guid(096f06d48f5c476418ea81326193470e) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/SazenGames/Skeleton/Art/Demo Animator Controllers/stab.overrideController using Guid(096f06d48f5c476418ea81326193470e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '89f15667d062a39a50f79b2fb9c25886') in 0.0090036 seconds
+  path: Assets/SazenGames/Skeleton/Art/Demo Animator Controllers/jump.overrideController
+  artifactKey: Guid(ed216cf0dd167e44c9dd8739492adfd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SazenGames/Skeleton/Art/Demo Animator Controllers/jump.overrideController using Guid(ed216cf0dd167e44c9dd8739492adfd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cbf445370a1d42f4db4663f0f8f92eb3') in 0.0057269 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Plants/PlantSaplingG.fbx
-  artifactKey: Guid(9a7e7ab6928a0444783532b7ae179a91) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Plants/PlantSaplingG.fbx using Guid(9a7e7ab6928a0444783532b7ae179a91) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '8a02c351e0ef5334c0eb3c247178766e') in 0.009727 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/SazenGames/Skeleton/Art/Demo Animator Controllers/revive.overrideController
-  artifactKey: Guid(15340e2c8ae3d5b479a50465a6d23485) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/SazenGames/Skeleton/Art/Demo Animator Controllers/revive.overrideController using Guid(15340e2c8ae3d5b479a50465a6d23485) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '4ee1fa0110fc2e186e9b7bf07cacb985') in 0.0079855 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Bushes/BushA.fbx
-  artifactKey: Guid(baf92015c3e863341b6e7d3969c1ad75) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Bushes/BushA.fbx using Guid(baf92015c3e863341b6e7d3969c1ad75) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'd5eaa8989a93fee69a35655f788618e6') in 0.0143748 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Materials/Ground.mat
-  artifactKey: Guid(2ea9c1069599b2545b9197291c4b6ce7) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Materials/Ground.mat using Guid(2ea9c1069599b2545b9197291c4b6ce7) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '1aa5c197a890d10547e57b0e6d595b51') in 0.0046591 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Settings/PC_Renderer.asset
-  artifactKey: Guid(f288ae1f4751b564a96ac7587541f7a2) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Settings/PC_Renderer.asset using Guid(f288ae1f4751b564a96ac7587541f7a2) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '91bceedf6d68ac4bafc4faf2c381ae16') in 0.0260336 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Arch/Ruins/RuinedWalls/RuinedWallRubbleA.fbx
-  artifactKey: Guid(34674780c2f35b945861ae483fea3346) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Arch/Ruins/RuinedWalls/RuinedWallRubbleA.fbx using Guid(34674780c2f35b945861ae483fea3346) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'f19abc4e232162a554a7f02840c89e24') in 0.01531 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Settings/DefaultVolumeProfile.asset
-  artifactKey: Guid(ab09877e2e707104187f6f83e2f62510) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Settings/DefaultVolumeProfile.asset using Guid(ab09877e2e707104187f6f83e2f62510) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '577b3cc6995b90d1f6cb503e2c89bd00') in 0.0070283 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/TreeBranches/TreeBranchBLeafless.fbx
-  artifactKey: Guid(6e1415ec4f05ed54c88ea790c844dba8) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/TreeBranches/TreeBranchBLeafless.fbx using Guid(6e1415ec4f05ed54c88ea790c844dba8) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'c87b3e237088238fa611c8e5bca797df') in 0.0109802 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/Birch/BirchTreeAdultA.fbx
-  artifactKey: Guid(642f000527b984744a729288940765a4) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/Birch/BirchTreeAdultA.fbx using Guid(642f000527b984744a729288940765a4) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '86f21a420f1f599c17f9d868623758df') in 0.0094279 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Rocks/Colliders/RockNormDCH0.asset
-  artifactKey: Guid(80387d9b1a686774f81fb2385bcc8f82) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Rocks/Colliders/RockNormDCH0.asset using Guid(80387d9b1a686774f81fb2385bcc8f82) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '751f767363a8590f6e24abdc7ed698fe') in 0.0043955 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Rocks/Colliders/RockBigCCH0.asset
-  artifactKey: Guid(591d1c70a3746d940986648f81778bbe) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Rocks/Colliders/RockBigCCH0.asset using Guid(591d1c70a3746d940986648f81778bbe) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '2e4e5ce841fdff7f89542fb1ad4a019e') in 0.0044266 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/TreeStumps/TreeStumpShortD.fbx
-  artifactKey: Guid(fdb6ea9b3e1c86240b089e474c95f799) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/TreeStumps/TreeStumpShortD.fbx using Guid(fdb6ea9b3e1c86240b089e474c95f799) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '7a0da33404918237ab80bebb85719bf5') in 0.0104849 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Ground/SmallPiles/GrassPileG.fbx
-  artifactKey: Guid(15d219c8063a9a14d84d5c368a9a45b4) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Ground/SmallPiles/GrassPileG.fbx using Guid(15d219c8063a9a14d84d5c368a9a45b4) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '6964a5ca1fa54081902fa3ab015d47a1') in 0.0097392 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/WeepingWillow/WillowTreeAdultA.fbx
-  artifactKey: Guid(6e70fe604311d5a419c604195008615d) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/WeepingWillow/WillowTreeAdultA.fbx using Guid(6e70fe604311d5a419c604195008615d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'eaa38a49d0a2b90610c0f3f8dfdef956') in 0.0098903 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/SazenGames/Skeleton/Art/Animations/Skeleton_stab.fbx
-  artifactKey: Guid(85b976b555a360642a5b0873d89e2f3f) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/SazenGames/Skeleton/Art/Animations/Skeleton_stab.fbx using Guid(85b976b555a360642a5b0873d89e2f3f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '6be7aba52afcac42a4f16d11b208fb8b') in 0.0205932 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 174
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000045 seconds.
-  path: Assets/SazenGames/Skeleton/Scripts/SimpleCameraController.cs
-  artifactKey: Guid(82e26807fca401943a61ddd7b3fabe6d) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/SazenGames/Skeleton/Scripts/SimpleCameraController.cs using Guid(82e26807fca401943a61ddd7b3fabe6d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '89cafe0b68cca780d9aa9b3125e5a6c4') in 0.0040164 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  path: Assets/SazenGames/Skeleton/Art/Demo Animator Controllers/revive.overrideController
+  artifactKey: Guid(15340e2c8ae3d5b479a50465a6d23485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SazenGames/Skeleton/Art/Demo Animator Controllers/revive.overrideController using Guid(15340e2c8ae3d5b479a50465a6d23485) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6ffa170b272beda84e9ee439a77afafa') in 0.0070199 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Settings/UniversalRenderPipelineGlobalSettings.asset
-  artifactKey: Guid(18dc0cd2c080841dea60987a38ce93fa) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Settings/UniversalRenderPipelineGlobalSettings.asset using Guid(18dc0cd2c080841dea60987a38ce93fa) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '7a60e014bd5b998e634f45fdf551a89a') in 0.0824303 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 0.000019 seconds.
+  path: Assets/SazenGames/Skeleton/Art/Demo Animator Controllers/run.overrideController
+  artifactKey: Guid(6cc4de54c1239c840ab98ec9f091249a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SazenGames/Skeleton/Art/Demo Animator Controllers/run.overrideController using Guid(6cc4de54c1239c840ab98ec9f091249a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '276444fafe8148ace0ecc9d96e68fba8') in 0.0050277 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Rocks/RockSmallA.fbx
-  artifactKey: Guid(074938465f1a8964c8618ddbe32d2b5f) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Rocks/RockSmallA.fbx using Guid(074938465f1a8964c8618ddbe32d2b5f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '978df95016cf99754c12ceb2fec65a46') in 0.0087096 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+  Time since last request: 0.000022 seconds.
+  path: Assets/SazenGames/Skeleton/Art/Demo Animator Controllers/turn right 90.overrideController
+  artifactKey: Guid(436479da612a4cb44b4af4cf09282c66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SazenGames/Skeleton/Art/Demo Animator Controllers/turn right 90.overrideController using Guid(436479da612a4cb44b4af4cf09282c66) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dbc804d5bce652b00161e06a2a4c5ff3') in 0.0045534 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/SazenGames/Skeleton/Art/Textures/Falchion_Texture.psd
-  artifactKey: Guid(24105ef0411bc4345876bafa55248028) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/SazenGames/Skeleton/Art/Textures/Falchion_Texture.psd using Guid(24105ef0411bc4345876bafa55248028) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '4371d90e8fd57765277ad9b276cad210') in 0.0358259 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+  Time since last request: 0.000019 seconds.
+  path: Assets/SazenGames/Skeleton/Art/Demo Animator Controllers/turn left 90.overrideController
+  artifactKey: Guid(2f0b74528eb465142b6b069fc7d59346) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SazenGames/Skeleton/Art/Demo Animator Controllers/turn left 90.overrideController using Guid(2f0b74528eb465142b6b069fc7d59346) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd9f6a50ad6d1372ebab439e11e9de448') in 0.0041852 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Props/Planks/PlankMed.prefab
-  artifactKey: Guid(dd10fc27e91c752469645a0cdf1445c1) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Props/Planks/PlankMed.prefab using Guid(dd10fc27e91c752469645a0cdf1445c1) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a5723b4affb1a7a89424974cf7e05889') in 0.0037244 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Rocks/RockSmallE.fbx
-  artifactKey: Guid(14722e6a1384b624b813e9e987a85a1b) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Rocks/RockSmallE.fbx using Guid(14722e6a1384b624b813e9e987a85a1b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'fd0aca17ad45a49f6b392f1e955d5ea1') in 0.0096057 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
+  Time since last request: 0.000019 seconds.
   path: Assets/SazenGames/Skeleton/Art/Demo Animator Controllers/slash02.overrideController
-  artifactKey: Guid(c36a95148ee8ecc4eb4d8f1b22de6c6f) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/SazenGames/Skeleton/Art/Demo Animator Controllers/slash02.overrideController using Guid(c36a95148ee8ecc4eb4d8f1b22de6c6f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '43791bc956f5775537d75a182a76a5c8') in 0.0065416 seconds
+  artifactKey: Guid(c36a95148ee8ecc4eb4d8f1b22de6c6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SazenGames/Skeleton/Art/Demo Animator Controllers/slash02.overrideController using Guid(c36a95148ee8ecc4eb4d8f1b22de6c6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '059ebd088c0b20899bc423a780da6e43') in 0.0048035 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Ground/FloatingIslands/FloatingIslandA.fbx
-  artifactKey: Guid(e00f38d569c23a54dbbcfa4151a1dd2d) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Ground/FloatingIslands/FloatingIslandA.fbx using Guid(e00f38d569c23a54dbbcfa4151a1dd2d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '15eb0fcd8880122d61afe6e399a2a8c6') in 0.0080392 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Props/Campfire/FirewoodPileA.fbx
-  artifactKey: Guid(b3dcf7ca05a49ac4da3648152b888178) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Props/Campfire/FirewoodPileA.fbx using Guid(b3dcf7ca05a49ac4da3648152b888178) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'ea2eb35d777fc2f186f905da9f429ea6') in 0.0075643 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/SazenGames/Skeleton/Art/Demo Animator Controllers/underground.overrideController
-  artifactKey: Guid(271ff7ea623d7174aac2da45c303fb39) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/SazenGames/Skeleton/Art/Demo Animator Controllers/underground.overrideController using Guid(271ff7ea623d7174aac2da45c303fb39) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '1b5ca2668034d5334c2bb56e75eb34cb') in 0.0059227 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Bushes/Colliders/Bush8_ConvexHull_0.asset
-  artifactKey: Guid(958e794f9854f424ca04be531638be9d) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Bushes/Colliders/Bush8_ConvexHull_0.asset using Guid(958e794f9854f424ca04be531638be9d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '2658e21f3ee9349f61900e5f1632e271') in 0.0050591 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Scenes/SampleScene.unity
-  artifactKey: Guid(99c9720ab356a0642a771bea13969a05) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Scenes/SampleScene.unity using Guid(99c9720ab356a0642a771bea13969a05) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e1bc02823fca3467f7d014b4e3c88782') in 0.0035732 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/SazenGames/Skeleton/Art/Meshes/Falchion_01.fbx
-  artifactKey: Guid(e6225f7dca5ab5c44928ed351487e920) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/SazenGames/Skeleton/Art/Meshes/Falchion_01.fbx using Guid(e6225f7dca5ab5c44928ed351487e920) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a2de01196f7d8fbef5c506a669435c06') in 0.0068662 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/SazenGames/Skeleton/Art/Demo Animator Controllers/slash01.overrideController
-  artifactKey: Guid(e0964a86e58371546a7538cdefa1b62f) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/SazenGames/Skeleton/Art/Demo Animator Controllers/slash01.overrideController using Guid(e0964a86e58371546a7538cdefa1b62f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'f4e4096f36acd5ebe0258452086233eb') in 0.0071188 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/TutorialInfo/Layout.wlt
-  artifactKey: Guid(eabc9546105bf4accac1fd62a63e88e6) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/TutorialInfo/Layout.wlt using Guid(eabc9546105bf4accac1fd62a63e88e6) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'dacfa60a77ab8a00f83ad8214f7b6cee') in 0.004286 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000017 seconds.
-  path: Assets/SazenGames/Skeleton/Art/Animations/Skeleton_fall.fbx
-  artifactKey: Guid(b3175ff2052d36d449f784bb41bf92f2) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/SazenGames/Skeleton/Art/Animations/Skeleton_fall.fbx using Guid(b3175ff2052d36d449f784bb41bf92f2) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'f909217d7b3b4a2039e2071690aca491') in 0.0133343 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 174
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Plants/Dandelions/DandelionsClusterB.fbx
-  artifactKey: Guid(c567b56ad0e41fc45a1ffbb643eb7302) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Plants/Dandelions/DandelionsClusterB.fbx using Guid(c567b56ad0e41fc45a1ffbb643eb7302) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '3d49c010057be4c6f85638136202995e') in 0.0092978 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/SazenGames/Skeleton/Art/Demo Animator Controllers/spawn.overrideController
-  artifactKey: Guid(14a24388f7e985f4688e5e8f06f5f30a) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/SazenGames/Skeleton/Art/Demo Animator Controllers/spawn.overrideController using Guid(14a24388f7e985f4688e5e8f06f5f30a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'fcfa1a29482a81d7f4c6383ab70ab3b8') in 0.0074167 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/SazenGames/Skeleton/Art/Demo Animator Controllers/idle.controller
-  artifactKey: Guid(d0635c5725ebf5c49ba6eee6b99dadb6) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/SazenGames/Skeleton/Art/Demo Animator Controllers/idle.controller using Guid(d0635c5725ebf5c49ba6eee6b99dadb6) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '97fd894f809fdb0f89ee982c54a87806') in 0.0051718 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Rocks/RockBlueD.fbx
-  artifactKey: Guid(cd5f7376db7add847ada07b4f6c88070) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Rocks/RockBlueD.fbx using Guid(cd5f7376db7add847ada07b4f6c88070) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'bbbfac495795f9c030297f8629651fd4') in 0.0078229 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/TreeLogs/TreeLogOakB.fbx
-  artifactKey: Guid(d035b4713ea22e947880b592698aaa2a) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/TreeLogs/TreeLogOakB.fbx using Guid(d035b4713ea22e947880b592698aaa2a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '0996f08cc227f051ca69c484a94165ae') in 0.0075938 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Mushrooms/FlyAgaric/FlyAgaricBYoungVariantB.fbx
-  artifactKey: Guid(49391071842577c4b890d0bdb964dc31) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Mushrooms/FlyAgaric/FlyAgaricBYoungVariantB.fbx using Guid(49391071842577c4b890d0bdb964dc31) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '81ef9bfed2a7b80b7d71ee7ed4a24835') in 0.0092562 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Props/Campfire/Colliders/CampfireASmallCH0.asset
-  artifactKey: Guid(e964e6f5666d1e74088dacd04b9e0858) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Props/Campfire/Colliders/CampfireASmallCH0.asset using Guid(e964e6f5666d1e74088dacd04b9e0858) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '3ffa69ebf3cbd64026bfe4cabbd054c0') in 0.0032761 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/SazenGames/Skeleton/Art/Animations/Skeleton_scream.fbx
-  artifactKey: Guid(86a91506aa2b93c489463253cfac6e49) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/SazenGames/Skeleton/Art/Animations/Skeleton_scream.fbx using Guid(86a91506aa2b93c489463253cfac6e49) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b9240ac69fe9e53c61b086359844f478') in 0.0138132 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 174
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Mushrooms/ShaggyInkCap/ShaggyInkCapCMatureVariantB.fbx
-  artifactKey: Guid(ffa390ec0b7403b468412f4f037acb0e) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Mushrooms/ShaggyInkCap/ShaggyInkCapCMatureVariantB.fbx using Guid(ffa390ec0b7403b468412f4f037acb0e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'da8e44a6e098273c2fb7bcfeeabe03c3') in 0.0102685 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/Birch/BirchTreeYoungCSimple.fbx
-  artifactKey: Guid(99a50bed576fd5742af7873b3532335e) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/Birch/BirchTreeYoungCSimple.fbx using Guid(99a50bed576fd5742af7873b3532335e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e45f21de0875e72afd86bfea8a385607') in 0.0109886 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/SazenGames/Skeleton/Art/Animations/Skeleton_walk_forward.fbx
-  artifactKey: Guid(c206cf45441f0484b930f9f870961a03) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/SazenGames/Skeleton/Art/Animations/Skeleton_walk_forward.fbx using Guid(c206cf45441f0484b930f9f870961a03) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '333fc3b25b8ccb738d93c8b69bafa4e9') in 0.0138246 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 174
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Props/Campfires/CampfireASmall.prefab
-  artifactKey: Guid(6e85cb502a92e1e438c6cf9a6e55e161) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Props/Campfires/CampfireASmall.prefab using Guid(6e85cb502a92e1e438c6cf9a6e55e161) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '7d9abee471e5271c4b13ccbb8d527e4f') in 0.0038833 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Ground/Mounds/DirtMoundD.fbx
-  artifactKey: Guid(736ba50661485dd47acfe4202f4a43ea) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Ground/Mounds/DirtMoundD.fbx using Guid(736ba50661485dd47acfe4202f4a43ea) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '8d0d7950f01a7951bd11b8bad8550b1e') in 0.0092926 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Arch/Ruins/RuinedWalls/RuinedWallA.fbx
-  artifactKey: Guid(b455936d14ab647478c64619cf509e72) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Arch/Ruins/RuinedWalls/RuinedWallA.fbx using Guid(b455936d14ab647478c64619cf509e72) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '2fe32602f8a1bdd6be393977e0e85038') in 0.0093066 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/SazenGames/Skeleton/Art/Animations/Skeleton_take_damage.fbx
-  artifactKey: Guid(7107e8e3228a3504f96167a4314fa2fb) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/SazenGames/Skeleton/Art/Animations/Skeleton_take_damage.fbx using Guid(7107e8e3228a3504f96167a4314fa2fb) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'f7ce3eb2e194fa772d50c9e4bde3cccc') in 0.0157489 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 174
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
   path: Assets/SazenGames/Skeleton/Art/Demo Animator Controllers/run RM.overrideController
-  artifactKey: Guid(ccfcef0ea4d3ca846a54601112e22e94) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/SazenGames/Skeleton/Art/Demo Animator Controllers/run RM.overrideController using Guid(ccfcef0ea4d3ca846a54601112e22e94) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '9713ce821bf22f1c9fe6d68412b5149f') in 0.006646 seconds
+  artifactKey: Guid(ccfcef0ea4d3ca846a54601112e22e94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SazenGames/Skeleton/Art/Demo Animator Controllers/run RM.overrideController using Guid(ccfcef0ea4d3ca846a54601112e22e94) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '74d9acc91d5bd9f805eceb2ae09df3de') in 0.0047512 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Scenes/Overview Nice.unity
-  artifactKey: Guid(117413a608d44d047a185d6746a8b2a7) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Scenes/Overview Nice.unity using Guid(117413a608d44d047a185d6746a8b2a7) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e81e99dfcb8fec7cac728e4feda9ecce') in 0.0177619 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/SazenGames/Skeleton/Art/Demo Animator Controllers/death.overrideController
-  artifactKey: Guid(d86f425e09bd3ff4fa0e23cbd09347a6) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/SazenGames/Skeleton/Art/Demo Animator Controllers/death.overrideController using Guid(d86f425e09bd3ff4fa0e23cbd09347a6) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '223eca98f371f42646e806e8580591d6') in 0.0062599 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Settings/SampleSceneProfile.asset
-  artifactKey: Guid(10fc4df2da32a41aaa32d77bc913491c) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Settings/SampleSceneProfile.asset using Guid(10fc4df2da32a41aaa32d77bc913491c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a62a6ecac3dfaf3d2a427df185eee685') in 0.0037353 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Rocks/RockNormD.prefab
-  artifactKey: Guid(db1a1ba10891cdc4cac435945dcc40b0) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Rocks/RockNormD.prefab using Guid(db1a1ba10891cdc4cac435945dcc40b0) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'f3d6e214c8a457268c063c7953ba000b') in 0.0037608 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Ground/Mounds/GrassMoundA.fbx
-  artifactKey: Guid(dd24c001a1cb727469da37390f41b68b) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Ground/Mounds/GrassMoundA.fbx using Guid(dd24c001a1cb727469da37390f41b68b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e0408a457953eb6f72962506fa1df142') in 0.0089095 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Rocks/RockBigC.fbx
-  artifactKey: Guid(b8c659933fafc384fbf4c56e9e396cbe) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Rocks/RockBigC.fbx using Guid(b8c659933fafc384fbf4c56e9e396cbe) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '044907d0485ce366dde731111b862cfe') in 0.0103538 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/TreeRoots/TreeRootB.fbx
-  artifactKey: Guid(2f325e9ed3e9493459e868b730887ee1) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/TreeRoots/TreeRootB.fbx using Guid(2f325e9ed3e9493459e868b730887ee1) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '30f9e2eef669d9970e29415b7d0e5663') in 0.0103282 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Rocks/RockSmallE.prefab
-  artifactKey: Guid(01d8d9ed0eec2844c8f07d40d51db58f) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Rocks/RockSmallE.prefab using Guid(01d8d9ed0eec2844c8f07d40d51db58f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '01721bf222fc3f18e346aed263c2e48b') in 0.004249 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/GenericTrees/GenericTreeD.fbx
-  artifactKey: Guid(a11317a70eaf955438aee69576672efb) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/GenericTrees/GenericTreeD.fbx using Guid(a11317a70eaf955438aee69576672efb) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '2f8444aac8050ba1c0e84f810d6db51e') in 0.0079295 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/SazenGames/Skeleton/Art/Demo Animator Controllers/throw.overrideController
-  artifactKey: Guid(b3592b4b08b9b804d846382c174ad5c1) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/SazenGames/Skeleton/Art/Demo Animator Controllers/throw.overrideController using Guid(b3592b4b08b9b804d846382c174ad5c1) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '3e07cf12ab20440707892bde004ab641') in 0.0065417 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.823147 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Arch/Ruins/RuinedWalls/RuinedWallRubbleA.prefab
-  artifactKey: Guid(59a3797f3b7e673419747b64d590ee73) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Arch/Ruins/RuinedWalls/RuinedWallRubbleA.prefab using Guid(59a3797f3b7e673419747b64d590ee73) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '3b7e15a3fbc7801361967c17a435331c') in 0.0050546 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Mushrooms/Porcini/PorcinigBAdultVariantD.prefab
-  artifactKey: Guid(7a16d0dff2341a04499856cf0518c4a9) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Mushrooms/Porcini/PorcinigBAdultVariantD.prefab using Guid(7a16d0dff2341a04499856cf0518c4a9) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'f14cdbdf7f7fe3da007649a5d73e2567') in 0.0054785 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/TreeStumps/Colliders/TreeStumpShortDCH2.asset
-  artifactKey: Guid(de207d380ebb88647980bb91408c1c01) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/TreeStumps/Colliders/TreeStumpShortDCH2.asset using Guid(de207d380ebb88647980bb91408c1c01) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '8461137f08b3961533df87ff50f7bb33') in 0.0034988 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/TreeStumps/Colliders/TreeStumpShortDCH3.asset
-  artifactKey: Guid(e1edd9edfe7a6a045855b1f74c2571d5) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/TreeStumps/Colliders/TreeStumpShortDCH3.asset using Guid(e1edd9edfe7a6a045855b1f74c2571d5) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '28c0962329fbf448d5867cfdab04671b') in 0.0043686 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Trees/Pines/PinesVariantA/PineVariantAMatureB.prefab
-  artifactKey: Guid(8ddde62f0160a6f4a95d49bb77217e31) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Trees/Pines/PinesVariantA/PineVariantAMatureB.prefab using Guid(8ddde62f0160a6f4a95d49bb77217e31) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '6ac946dc5f92b9b8673eb14d55056a3a') in 0.0041717 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Ground/SmallPiles/DirtPileG.prefab
-  artifactKey: Guid(34d18cf02c7c6de4b9a7b06092c308cd) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Ground/SmallPiles/DirtPileG.prefab using Guid(34d18cf02c7c6de4b9a7b06092c308cd) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a908dd80d53c809e8124a9a4994cef50') in 0.00525 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/TreeBranches/Colliders/TreeBranchBLeaflessCH0.asset
-  artifactKey: Guid(6bd8cad0a483a8a46a468b788b81edaa) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/TreeBranches/Colliders/TreeBranchBLeaflessCH0.asset using Guid(6bd8cad0a483a8a46a468b788b81edaa) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '5247bab3818d568381119bcde72e2b29') in 0.0034588 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Plants/WildGarlic/WildGarlicBLeaves.prefab
-  artifactKey: Guid(36c1a8d39f98c6c448e00c6f51c2b625) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Plants/WildGarlic/WildGarlicBLeaves.prefab using Guid(36c1a8d39f98c6c448e00c6f51c2b625) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'bcabf5981a5a1bbbd9e1c820ad7cbcf8') in 0.0049833 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Trees/Oak/OakAdultD.prefab
-  artifactKey: Guid(f092fcd3cb640fd4885a0887618a20d8) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Trees/Oak/OakAdultD.prefab using Guid(f092fcd3cb640fd4885a0887618a20d8) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '713f3d6d28a05bcd5dd59333cb27bf8b') in 0.0038828 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Mushrooms/DeathCap/DeathCapBAdultVariantC.prefab
-  artifactKey: Guid(8756720838ad4bb499ea9de77f99f5ae) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Mushrooms/DeathCap/DeathCapBAdultVariantC.prefab using Guid(8756720838ad4bb499ea9de77f99f5ae) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'd573b7fc9eb8c407e55f30235130ee33') in 0.0057839 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Ground/Mounds/GrassMoundD.prefab
-  artifactKey: Guid(668c85b6a34e0a84488cde9c24a36ed8) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Ground/Mounds/GrassMoundD.prefab using Guid(668c85b6a34e0a84488cde9c24a36ed8) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '5d5d340c0141acbb1eaf041a6e7d9d1f') in 0.0071087 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Plants/Ferns/FernDClusterVariantB.prefab
-  artifactKey: Guid(2ec0958c9bde5684fab3b57ca19f5274) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Plants/Ferns/FernDClusterVariantB.prefab using Guid(2ec0958c9bde5684fab3b57ca19f5274) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b877d2fc8ef3a257f26ae49ff32ade5b') in 0.0048408 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/Pines/PineVariantA/PineVariantAYoungC.fbx
-  artifactKey: Guid(3d218ce37b699454a8925a412a62ed27) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/Pines/PineVariantA/PineVariantAYoungC.fbx using Guid(3d218ce37b699454a8925a412a62ed27) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '2c7786703b12fee5dcbf7a69e48a6ee7') in 0.0111868 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Mushrooms/Girolle/GirolleAVariantA.prefab
-  artifactKey: Guid(6cb33f37d46f4474694f720120553d09) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Mushrooms/Girolle/GirolleAVariantA.prefab using Guid(6cb33f37d46f4474694f720120553d09) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'f5f5f15e7bb423c3997097954e47cea3') in 0.0034132 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/TreeRoots/Colliders/TreeRootBCH0.asset
-  artifactKey: Guid(64104901b15e83f42bfcb8699a242b5b) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/TreeRoots/Colliders/TreeRootBCH0.asset using Guid(64104901b15e83f42bfcb8699a242b5b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '32d1c4627f01132ffa8f5f37b80f90ed') in 0.003107 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Arch/Ruins/RuinedWalls/Colliders/RuinedWallRubbleACH1.asset
-  artifactKey: Guid(c3ced6e5bb8f1b94e83f9ee2e128b1ae) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Arch/Ruins/RuinedWalls/Colliders/RuinedWallRubbleACH1.asset using Guid(c3ced6e5bb8f1b94e83f9ee2e128b1ae) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '88806ceee6ac8c3916cf48d8d788506e') in 0.0043106 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/Pines/PineVariantA/PineVariantAMatureB.fbx
-  artifactKey: Guid(16caafe12082485418ce7d365b89e6ab) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/Pines/PineVariantA/PineVariantAMatureB.fbx using Guid(16caafe12082485418ce7d365b89e6ab) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '382d0b639e514720cc52af68c045d05c') in 0.0112832 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/TreeStumps/Colliders/TreeStumpNormalCCH0.asset
-  artifactKey: Guid(81909c91d7128b54c8fb6d9eecb084d7) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/TreeStumps/Colliders/TreeStumpNormalCCH0.asset using Guid(81909c91d7128b54c8fb6d9eecb084d7) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '62a231797282f30fbd7595b8c57a8944') in 0.0053363 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Arch/Ruins/RuinedWalls/Colliders/RuinedWallRubbleACH2.asset
-  artifactKey: Guid(a32261b66aa21f046b5f3ae85246a1cf) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Arch/Ruins/RuinedWalls/Colliders/RuinedWallRubbleACH2.asset using Guid(a32261b66aa21f046b5f3ae85246a1cf) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '4ab64600d9382e1809020a48fa433818') in 0.0041446 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Ground/FloatingIslands/Colliders/FloatingIslandA_ConvexHull_0.asset
-  artifactKey: Guid(ad8a40be02a13d644977cd8a2c3d9d8b) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Ground/FloatingIslands/Colliders/FloatingIslandA_ConvexHull_0.asset using Guid(ad8a40be02a13d644977cd8a2c3d9d8b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '4de68cf8e14701619a89b1d6e851e3ae') in 0.0053559 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Plants/Ferns/FernBClusterVariantA.prefab
-  artifactKey: Guid(405500ba6852da942957eec1e3d7c92b) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Plants/Ferns/FernBClusterVariantA.prefab using Guid(405500ba6852da942957eec1e3d7c92b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b0f566d6929a6196554d0dbbdcf409fd') in 0.005584 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Trees/Willows/WillowTreeAdultA.prefab
-  artifactKey: Guid(43ee72857f3b6a84c97140ff3c4d22c7) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Trees/Willows/WillowTreeAdultA.prefab using Guid(43ee72857f3b6a84c97140ff3c4d22c7) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'd3339ff05fd59074c00bf36ef36679ee') in 0.0046591 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Arch/Fence/SimWoodFnc/SWFModules/SWFModShortA.fbx
-  artifactKey: Guid(f8361570c65cbdb4097cd06c24fcbff8) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Arch/Fence/SimWoodFnc/SWFModules/SWFModShortA.fbx using Guid(f8361570c65cbdb4097cd06c24fcbff8) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '38e8af45bbd4136ec3bac5cc0dcbaacb') in 0.0174102 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Trees/Pines/PinesVariantA/PineVariantAGrowingB.prefab
-  artifactKey: Guid(9e233e4f89ad60b448af75ab01971d54) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Trees/Pines/PinesVariantA/PineVariantAGrowingB.prefab using Guid(9e233e4f89ad60b448af75ab01971d54) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'ca560ca0f9dc503d68f01cd671926d19') in 0.0068661 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Ground/FloatingIslands/FloatingIslandA.prefab
-  artifactKey: Guid(a28a98df90792dd43b4a809fac42d68e) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Ground/FloatingIslands/FloatingIslandA.prefab using Guid(a28a98df90792dd43b4a809fac42d68e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e2043df3a64bb5d3eb91ab712cc20522') in 0.006729 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/TreeLogs/TreeLogsPiles/TreeLogPileNormalB.fbx
-  artifactKey: Guid(70b99cc28be90ca48bce628f23bbc4db) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/TreeLogs/TreeLogsPiles/TreeLogPileNormalB.fbx using Guid(70b99cc28be90ca48bce628f23bbc4db) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '39984651c38d052ca3b4cc0b6ff2f221') in 0.0127502 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Plants/Ferns/Colliders/FernDClusterVariantB_ConvexHull_0.asset
-  artifactKey: Guid(676467cc75f2ca14a9a8a1287dff368f) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Plants/Ferns/Colliders/FernDClusterVariantB_ConvexHull_0.asset using Guid(676467cc75f2ca14a9a8a1287dff368f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '457687fb1ea8584cf4ccbb311601dd72') in 0.0038079 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Arch/Ruins/RuinedWalls/Colliders/RuinedWallACH0.asset
-  artifactKey: Guid(69d9a14bc01fb534f9119e2d5aae23ca) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Arch/Ruins/RuinedWalls/Colliders/RuinedWallACH0.asset using Guid(69d9a14bc01fb534f9119e2d5aae23ca) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '5584db06303e877177ff4b74de5a4bf7') in 0.0066999 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Trees/WitheredTrees/WitheredTreeB.prefab
-  artifactKey: Guid(7f5c42d9053047a4798da8780cb01670) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Trees/WitheredTrees/WitheredTreeB.prefab using Guid(7f5c42d9053047a4798da8780cb01670) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'aaab7e2face0f123b31f9f9e1c2bb354') in 0.0055212 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000026 seconds.
-  path: Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Plants/Ivy/IvySimple/IvybranchCDense.fbx
-  artifactKey: Guid(734f82496c6252d4cb348f9589c47a13) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Plants/Ivy/IvySimple/IvybranchCDense.fbx using Guid(734f82496c6252d4cb348f9589c47a13) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '446231a491fb983f8f102c6a6bb376c1') in 0.0106982 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+  path: Assets/SazenGames/Skeleton/Art/Demo Animator Controllers/throw.overrideController
+  artifactKey: Guid(b3592b4b08b9b804d846382c174ad5c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SazenGames/Skeleton/Art/Demo Animator Controllers/throw.overrideController using Guid(b3592b4b08b9b804d846382c174ad5c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3644e3b42fdd4dc8c7f7ce291977e196') in 0.0041323 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/SazenGames/Skeleton/Art/Demo Animator Controllers/slash01.overrideController
+  artifactKey: Guid(e0964a86e58371546a7538cdefa1b62f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SazenGames/Skeleton/Art/Demo Animator Controllers/slash01.overrideController using Guid(e0964a86e58371546a7538cdefa1b62f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'afe27eb662899384e2a31732fa908d3a') in 0.0046371 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

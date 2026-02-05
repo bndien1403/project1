@@ -10,7 +10,7 @@ public class EnemyController : MonoBehaviour
         Chase // ruot duoi
     }
 
-    private EnemyState _enemyCurrentState;
+    public EnemyState _enemyCurrentState;
     EnemyZone _enemyZone;
     Animator _animatorEnemy;
     public string ATTACK_ANIM;
@@ -55,11 +55,10 @@ public class EnemyController : MonoBehaviour
             _enemyCurrentState = EnemyState.Attack;
         }
 
-        if (_enemyZone.isHit)
+        if (_enemyZone.isRun)
         {
             _enemyCurrentState = EnemyState.Chase;
-        }
-        else
+        }else if(!_enemyZone.isRun)
         {
             _enemyCurrentState = EnemyState.Idle;
         }
