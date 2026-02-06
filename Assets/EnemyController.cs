@@ -5,7 +5,7 @@ public class EnemyController : MonoBehaviour
 {
     public enum EnemyState
     {
-        Idle,
+        Pending,
         Attack,
         Chase // ruot duoi
     }
@@ -14,20 +14,21 @@ public class EnemyController : MonoBehaviour
     EnemyZone _enemyZone;
     Animator _animatorEnemy;
     public string ATTACK_ANIM;
-    public string IDLE_ANIM;
+    public string PENDING_ANIM;
     public string CHASE_ANIM;
     private float _lockedTill; // Biến dùng để khóa logic chuyển đổi trong thời gian ngắn
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Awake()
     {
-        _enemyZone = GetComponent<EnemyZone>();
-        _animatorEnemy = GetComponent<Animator>();
+       
     }
 
     void Start()
     { 
-        _enemyCurrentState = EnemyState.Idle;
+        _enemyZone = GetComponent<EnemyZone>();
+        _animatorEnemy = GetComponent<Animator>();
+        _enemyCurrentState = EnemyState.Pending;
     }
 
     // Update is called once per frame
@@ -36,7 +37,7 @@ public class EnemyController : MonoBehaviour
        ChangeState();
        switch (_enemyCurrentState)
        {
-           case EnemyState.Idle:
+           case EnemyState.Pending:
                Pending();
                break;
            case EnemyState.Attack:
@@ -50,42 +51,53 @@ public class EnemyController : MonoBehaviour
 
     void ChangeState()
     {
+        if (_enemyZone == null) return;
         if (_enemyZone.isAttack)
         {
             _enemyCurrentState = EnemyState.Attack;
         }
-
-        if (_enemyZone.isRun)
+        else if (_enemyZone.isRun)
         {
             _enemyCurrentState = EnemyState.Chase;
-        }else if(!_enemyZone.isRun)
+        }
+        else
         {
-            _enemyCurrentState = EnemyState.Idle;
+            _enemyCurrentState = EnemyState.Pending;
         }
     }
 
     void ChaseToPlayer()
     {
+        if(_animatorEnemy== null ) return;
         _animatorEnemy.CrossFade(CHASE_ANIM, 0.01f);
        
     }
 
     void AttackPlayer()
     {
-     
+        if(_animatorEnemy== null ) return;
+        if (!IsPlaying(ATTACK_ANIM))
+        {
             _animatorEnemy.CrossFade(ATTACK_ANIM, 0.01f);
-            LockState(1f);
-       
+            LockState(0.25f); // Khóa 0.25s để Animator kịp chuyển sang Attack
+        }
+            
+        
         
     }
 
     void Pending()
     {
-        _animatorEnemy.CrossFade(IDLE_ANIM, 0.01f);
+        if(_animatorEnemy== null ) return;
+        _animatorEnemy.CrossFade(PENDING_ANIM, 0.01f);
     }
     //khoa chuyen doi animation
     void LockState(float duration)
     {
         _lockedTill = Time.time + duration;
+    }
+    bool IsPlaying(string animName)
+    {
+        return _animatorEnemy.GetCurrentAnimatorStateInfo(0).IsName(animName);
     }
 }

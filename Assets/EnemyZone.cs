@@ -22,32 +22,44 @@ public class EnemyZone : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        RaycastHit hit;
-        
+        // Tìm player trong vùng (không phụ thuộc hướng forward) – SphereCast theo forward dễ miss khi enemy chưa quay về player
+        Collider[] hits = Physics.OverlapSphere(transform.position, maxDistance, playerMask);
+        if (hits.Length > 0)
+        {
+            // Lấy player gần nhất
+            Transform target = hits[0].transform;
+            float nearest = Vector3.Distance(transform.position, target.position);
+            for (int i = 1; i < hits.Length; i++)
+            {
+                float d = Vector3.Distance(transform.position, hits[i].transform.position);
+                if (d < nearest)
+                {
+                    nearest = d;
+                    target = hits[i].transform;
+                }
+            }
 
-       if( Physics.SphereCast(transform.position, radius, transform.forward, out hit, maxDistance, playerMask)){
-            Vector3 target = hit.transform.position;
-            distance = Vector3.Distance(transform.position, target);
-            transform.LookAt(target);
-            transform.position = Vector3.MoveTowards(transform.position, target, speedEnemy * Time.deltaTime);
-            isRun = true;
-            if (distance <= 1.6f)
+            distance = nearest;
+          
+
+            if (distance <= 1f)
             {
                 isAttack = true;
                 isRun = false;
             }
-            else 
-            {
-                isAttack = false;
+            else
+            { 
                 isRun = true;
+                isAttack = false;
+                transform.LookAt(new Vector3(target.position.x, transform.position.y, target.position.z));
+                transform.position = Vector3.MoveTowards(transform.position, target.position, speedEnemy * Time.deltaTime);
             }
         }
-       else
-       {
-           isRun = false;
+        else
+        {
+            isRun = false;
             isAttack = false;
-       }
-       
+        }
     }
 
     private void OnDrawGizmosSelected()
