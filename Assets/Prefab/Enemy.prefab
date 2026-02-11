@@ -9,16 +9,19 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8294921172339045951}
-  - component: {fileID: 3727396790185794004}
-  - component: {fileID: 4474948378711241209}
   - component: {fileID: 4453540452149912595}
+  - component: {fileID: 6404556871035865753}
+  - component: {fileID: 3978165989730203821}
+  - component: {fileID: 4218449514507636538}
+  - component: {fileID: 94991114110112669}
+  - component: {fileID: 1268539062018225333}
   m_Layer: 6
   m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8294921172339045951
 Transform:
   m_ObjectHideFlags: 0
@@ -35,43 +38,6 @@ Transform:
   - {fileID: 5821172857677105359}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3727396790185794004
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 96260552189666016}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c956d25241eec54088cea34b95d5710, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  radius: 1
-  maxDistance: 10
-  playerMask:
-    serializedVersion: 2
-    m_Bits: 8
-  speedEnemy: 4
-  isAttack: 0
-  isRun: 0
-  distance: 0
---- !u!114 &4474948378711241209
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 96260552189666016}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31b75491ffbb8e4499409b13bfd6a5ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _enemyCurrentState: 0
-  ATTACK_ANIM: root|slash01
-  PENDING_ANIM: anim
-  CHASE_ANIM: Run
 --- !u!95 &4453540452149912595
 Animator:
   serializedVersion: 7
@@ -94,6 +60,109 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!143 &6404556871035865753
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96260552189666016}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 1.73
+  m_Radius: 0.25
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0.85, z: 0}
+--- !u!114 &3978165989730203821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96260552189666016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80b72934d87a6414a9ddbe07f29aadff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 3
+  rotationSpeed: 5
+  roamRadius: 10
+  obstacleCheckDistance: 2
+  obstacleLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  ANIM_IDLE: anim
+  ANIM_WALK: Run
+--- !u!114 &4218449514507636538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96260552189666016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b515fa1598eec1f439d0b8e12b907361, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 50
+  currentHealth: 0
+  damage: 20
+  isDead: 0
+  ANIM_DEAD: root|death
+--- !u!114 &94991114110112669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96260552189666016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31b75491ffbb8e4499409b13bfd6a5ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enemyCurrentState: 0
+  _pendingCurrentState: 0
+  ATTACK_ANIM: root|slash01
+  IDLE_ANIM: anim
+  RUN_ANIM: Run
+  minStateTime: 2
+  maxStateTime: 5
+--- !u!114 &1268539062018225333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96260552189666016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c956d25241eec54088cea34b95d5710, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 1
+  maxDistance: 10
+  playerMask:
+    serializedVersion: 2
+    m_Bits: 8
+  speedEnemy: 4
+  isAttack: 0
+  isRun: 0
+  distance: 0
 --- !u!1001 &5642538746798792610
 PrefabInstance:
   m_ObjectHideFlags: 0
