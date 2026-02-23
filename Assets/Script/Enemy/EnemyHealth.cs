@@ -10,10 +10,17 @@ public class EnemyHealth : MonoBehaviour
   public bool isDead = false;
   private Animator _animator;
   public string ANIM_DEAD;
+  public string ANIM_TAKEDAMAGE;
     [Header("Reward Settings")]
     public int coinReward ;
 
     private EnemyPool _enemyPool;
+    [Header("damage vfx")]
+    private DamagePopup _damagePopup;
+
+    public GameObject damageVfx;
+    public Transform damagePosition;
+    
 
   private void Start()
   {
@@ -22,6 +29,7 @@ public class EnemyHealth : MonoBehaviour
         _animator  = GetComponent<Animator>();
     _enemyPool = GetComponent<EnemyPool>();
     currentHealth = enemyHealth;
+    _damagePopup = GetComponent<DamagePopup>();
   }
 
   // Hàm này chạy mỗi khi object được bật lại từ pool
@@ -38,6 +46,8 @@ public class EnemyHealth : MonoBehaviour
       {
         
           currentHealth -= damage;
+          _animator.SetTrigger(ANIM_TAKEDAMAGE);
+          Showdamage(damage);
 
       }
   }
@@ -96,8 +106,11 @@ public class EnemyHealth : MonoBehaviour
         Vector3 exploreDir = Random.onUnitSphere;
         exploreDir.y = Mathf.Abs(exploreDir.y);
         coinRb.AddForce(exploreDir * Random.Range(2f, 4f), ForceMode.Impulse);
+    }
 
-        ;
-
+    void Showdamage(float damage)
+    {
+        GameObject popup = Instantiate(damageVfx, damagePosition.position, Quaternion.identity, FindObjectOfType<Canvas>().transform);
+        popup.GetComponent<DamagePopup>().SetUp(damage);
     }
 }

@@ -280,6 +280,8 @@ MonoBehaviour:
   attack2Key: 50
   attack3Key: 51
   attack4Key: 52
+  joystick: {fileID: 0}
+  _isDead: 0
   ANIM_SPAWN: root|spawn
   ANIM_DEATH: root|death
   ANIM_REVIVE: root|revive

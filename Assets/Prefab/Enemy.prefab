@@ -123,6 +123,10 @@ MonoBehaviour:
   damage: 20
   isDead: 0
   ANIM_DEAD: root|death
+  ANIM_TAKEDAMAGE: root|Take Damage
+  coinReward: 0
+  damageVfx: {fileID: 1079859802998775364, guid: ef43a605c4a05b7469cc5cc8c1baff36, type: 3}
+  damagePosition: {fileID: 8294921172339045951}
 --- !u!114 &94991114110112669
 MonoBehaviour:
   m_ObjectHideFlags: 0

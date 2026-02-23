@@ -20,6 +20,9 @@ namespace SazenGames.Skeleton
         public KeyCode attack3Key = KeyCode.Alpha3;
         public KeyCode attack4Key = KeyCode.Alpha4;
 
+        // Joystick (Hỗ trợ cả DynamicJoystick, FixedJoystick, VariableJoystick...)
+        public Joystick joystick;
+
         // References
         private CharacterController _controller;
         PlayerHealth _playerHealth;
@@ -55,8 +58,6 @@ namespace SazenGames.Skeleton
             {
                 _cameraTransform = Camera.main.transform;
             }
-            // 
-       
 
             // Trigger Spawn animation
             ChangeAnimationState(ANIM_SPAWN);
@@ -86,8 +87,20 @@ namespace SazenGames.Skeleton
                 _velocity.y = -2f;
             }
 
+            // Lấy input từ Keyboard
             float moveX = Input.GetAxis("Horizontal");
             float moveZ = Input.GetAxis("Vertical");
+
+            // Cộng thêm input từ Joystick nếu có
+            if (joystick != null)
+            {
+                if (Mathf.Abs(joystick.Horizontal) > 0.1f || Mathf.Abs(joystick.Vertical) > 0.1f)
+                {
+                    moveX += joystick.Horizontal;
+                    moveZ += joystick.Vertical;
+                }
+            }
+
             Vector3 direction = new Vector3(moveX, 0, moveZ).normalized;
 
             // Xác định trạng thái di chuyển mong muốn
