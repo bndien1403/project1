@@ -124,7 +124,7 @@ namespace SazenGames.Skeleton
             {
                 _velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
                 
-                // Sử dụng Trigger cho Jump theo yêu cầu
+              
                 _animator.CrossFade(ANIM_JUMP, 0.01f);
 
                 LockState(0.1f); // Khóa ngắn để đảm bảo nhảy bắt đầu
@@ -142,6 +142,7 @@ namespace SazenGames.Skeleton
             _velocity.y += gravity * Time.deltaTime;
             _controller.Move(_velocity * Time.deltaTime);
         }
+        
 
         bool HandleAttack()
         {
