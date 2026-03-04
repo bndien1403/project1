@@ -17,7 +17,7 @@ public class PlayerJump : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (PlayerController.Instance.IsPlayingAction()) return;
+       // if (PlayerController.Instance.IsPlayingAction()) return;
        HandleClickJump();
     }
 
